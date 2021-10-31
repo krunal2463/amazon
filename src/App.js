@@ -6,7 +6,6 @@ import Home from './Home';
 import Practice from './Practice';
 import Checkout from './Checkout'
 import Login from "./Login" 
-import { auth } from './firebase';
 import { useStateValue} from "./StateProvider";
 import {useEffect} from "react";
 import Payment  from "./Payment"
