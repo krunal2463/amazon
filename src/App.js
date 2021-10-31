@@ -7,37 +7,14 @@ import Practice from './Practice';
 import Checkout from './Checkout'
 import Login from "./Login" 
 import { useStateValue} from "./StateProvider";
-import {useEffect} from "react";
 import Payment  from "./Payment"
 import {loadStripe} from "@stripe/stripe-js";
 import {Elements} from "@stripe/react-stripe-js";
 
-const promise = loadStripe('pk_test_51Jb3fSFilCQL9Rj2Ir5X1otx3AmwVW8WzkvY9uWLYbY7ILVzMtRnGMGbkDZ99ibwCowmSDMCfs21C4xw41838Y3e00WE4VKdQl');
- 
+
 
 function App() {
    const [{}, dispatch] = useStateValue();
-
- useEffect (() => {
-      //will only run once when the app component loads...
-
-      auth.onAuthStateChanged(authUser => {
-         console.log('THE USER IS >>>', authUser);
-         if (authUser) {
-            //the user just logged in / the user was logged in 
-            dispatch({
-               type: 'SET_USER',
-               user: authUser,
-            })
-         } else {
-            //the user is logged out
-            dispatch({
-               type: 'SET_USER',
-               user: null
-            })
-         }
-      })
-   });
 
 
   return (
