@@ -8,8 +8,6 @@ import Checkout from './Checkout'
 import Login from "./Login" 
 import { useStateValue} from "./StateProvider";
 import Payment  from "./Payment"
-import {loadStripe} from "@stripe/stripe-js";
-import {Elements} from "@stripe/react-stripe-js";
 
 
 
@@ -30,10 +28,8 @@ function App() {
            </Route>
            <Route path="/payment">
                <Header />   
-               <Elements stripe={promise}>
-                     <Payment />
-               </Elements>
-           </Route>
+               <Payment />
+            </Route>
             <Route path="/practice">
             <Practice />
             <h1>This path is just for practice</h1>
