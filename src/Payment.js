@@ -5,7 +5,6 @@ import CheckoutProduct from "./CheckoutProduct"
 import {Link} from "react-router-dom";
 import CurrencyFormat from 'react-currency-format';
 import {getBasketTotal} from "./reducer";
-import axios from './axios';
 
 function Payment() {
     const [{basket, user}, dispatch] = useStateValue();
