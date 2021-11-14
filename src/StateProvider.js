@@ -8,6 +8,7 @@ import React, { createContext, useContext, useReducer } from "react";
 export const StateContext = createContext();
 
 // Wrap our app and provide the data layer
+//StateProvider = Global variable
 
 export const StateProvider = ({reducer, initialState, children}) => {
   return (

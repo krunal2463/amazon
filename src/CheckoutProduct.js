@@ -31,7 +31,7 @@ const removeFromBasket = () => {
                     {Array(rating)
                     .fill()
                     .map((_) => (
-                        <p><StarIcon /></p>
+                        <p><StarIcon className="checkoutProduct__icon" /></p>
                         ))}
                     </div>
                     <button onClick={removeFromBasket}>Remove from basket</button>

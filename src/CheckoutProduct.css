@@ -13,21 +13,31 @@
 
 .checkoutProduct__info {
     padding-left: 20px;
+    margin-top: -15px;
 }
 
 .checkoutProduct__title {
     font-size: 17px;
     font-weight: 800;
+    margin-bottom: -10px;
 }
 
 .checkoutProduct__rating {
     display: flex;
+    margin-top: -30px;
+    margin-bottom: -10px;
 }
 
+.checkoutProduct__icon {
+    color: #f0c14b;
+  }
+
 .checkoutProduct__info > button {
-        background: #f0c14b;
+        background: #ffa41c;
         border: 1px solid;
         margin-top: 10px;
         border-color: #a88734 #9c7e31 #846a29;
         color: #111;
+        cursor: pointer;
+
 }

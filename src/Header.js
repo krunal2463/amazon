@@ -6,6 +6,7 @@ import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
 import { useStateValue } from './StateProvider';
 
 
+
 function Header() {
   const [{basket, user}, dispatch] = useStateValue();
 
@@ -14,26 +15,19 @@ function Header() {
   return (
     <nav className="header">
 
-      {/* logo on the left => img  */}
-
       <Link to="/">
       <img src="https://logos-world.net/wp-content/uploads/2020/04/Amazon-Emblem.jpg" 
       alt="" className="header__logo" />
       </Link>
-
-      {/* Search Box */}
 
       <div className="header__search">
       <input type="text" className="header__searchInput" />
       <SearchIcon className="header__searchIcon" />
       </div>
 
-      {/* 3 links: */}
-
       <div className="header__nav">
         <Link to={!user && '/login'} className="header__link">
           <div className="header__option">
-            {/* user ? .email || "Guest" */}
             <span className="header__optionLineOne">Hello {!user ? "Guest" : user.email}</span>
             <span className="header__optionLineTwo">{user ? "Sign Out" : "Sign In"}</span>
           </div>
@@ -53,12 +47,9 @@ function Header() {
           </div>
         </Link>
 
-        {/* link: 4 */}
         <Link to="/checkout" className="header__link">
           <div className="header__optionBasket">
             <ShoppingBasketIcon />
-            {/* Shopping basket icon
-            Number of items in the basket */}
             <span className="header__optionLineTwo header__basketCount">{basket?.length}</span>
           </div>
         </Link>

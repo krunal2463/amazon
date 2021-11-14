@@ -34,7 +34,7 @@ const addToBasket = () => {
         {Array(rating)
         .fill()
         .map((_) => (
-          <p><StarIcon /></p>
+          <p><StarIcon  className="product__icon" /></p>
         ))}
       </div>
       </div>

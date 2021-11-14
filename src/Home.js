@@ -22,7 +22,7 @@ function Home() {
     id="2"
     title="OnePlus Watch - Smartwatch Midnight Black"
     price={179.96}
-    rating={5}
+    rating={4}
     image="https://m.media-amazon.com/images/I/51-PGlCDyTS._AC_UY327_FMwebp_QL65_.jpg"
     />
     </div>
@@ -39,8 +39,8 @@ function Home() {
     id="4"
     title="
     Roll over image to zoom in VIDEO Laura Ashley Home - Charlotte Collection - Luxury Ultra Soft Comforter"
-    price={251.96}
-    rating={5}
+    price={551.96}
+    rating={4}
     image="https://m.media-amazon.com/images/I/A1kFVCaVUOL._AC_UL480_FMwebp_QL65_.jpg"
     />
     <Product 
@@ -57,7 +57,7 @@ function Home() {
     id="6"
     title="SAMSUNG 40-inch Class LED Smart FHD TV 1080P (UN40N5200AFXZA, 2019 Model)"
     price={179.96}
-    rating={5}
+    rating={4}
     image="https://m.media-amazon.com/images/I/71Ao8Im97TL._AC_UL480_FMwebp_QL65_.jpg"
     />
     </div>

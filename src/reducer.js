@@ -1,23 +1,5 @@
 export const initialState = {
-  basket: [
-    
-  //   {
-  //   id:"2",
-  //   title:"Atomic Habits",
-  //   price: 11.96,
-  //   rating: 5,
-  //   image: "https://images-na.ssl-images-amazon.com/images/I/51vSbWpF+dS._SX329_BO1,204,203,200_.jpg"
-  // },
-
-  // {
-  //   id:"4",
-  //   title:"Atomic Habits",
-  //   price: 11.96,
-  //   rating: 5,
-  //   image: "https://images-na.ssl-images-amazon.com/images/I/51vSbWpF+dS._SX329_BO1,204,203,200_.jpg"
-  // }
-
-],
+  basket: [],
   user: null,
 };
 
