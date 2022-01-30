@@ -1,19 +1,20 @@
 import React from 'react'
 import Product from './Product'
-import "./Home.css"
+import "./Home.css";
+import Carousel from './Carousel';
 
 function Home() {
   
   return (
     <div className="home">
-      <img className="home__image" src="https://images-eu.ssl-images-amazon.com/images/G/02/digital/video/merch2016/Hero/Covid19/Generic/GWBleedingHero_ENG_COVIDUPDATE__XSite_1500x600_PV_en-GB._CB428684220_.jpg" alt="" />
+      <Carousel />
+      
     
     {/* Product id, title, price, rating, image */}
     <div className="home__row">
     <Product 
     id="1"
-    title="
-    Apple iPhone 12 Pro Max, 128GB, Gold"
+    title="Apple iPhone 12 Pro Max, 128GB, Gold"
     price={1150.99}
     rating={5}
     image="https://m.media-amazon.com/images/I/71u1BzjGJbL._AC_UY327_FMwebp_QL65_.jpg"
@@ -31,7 +32,7 @@ function Home() {
     <Product 
     id="3"
     title="Sony WH1000XM3 Noise Cancelling Headphones : Wireless Bluetooth Over the Ear Headset – Silver"
-    price={348.00}
+    price={348.99}
     rating={5}
     image="https://m.media-amazon.com/images/I/51mPLqxRWvL._AC_UL480_FMwebp_QL65_.jpg"
     />

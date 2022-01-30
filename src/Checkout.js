@@ -3,6 +3,7 @@ import { useStateValue } from './StateProvider';
 import "./Checkout.css"
 import CheckoutProduct from './CheckoutProduct';
 import Subtotal from './Subtotal';
+import image77 from "./asset/images/image77.jpg";
 
 
 
@@ -12,9 +13,6 @@ function Checkout() {
         <div className="checkout">
             <div className="checkout__left">
                    
-        <img className="checkout__ad"
-        src="https://mgrconsultinggroup.com/wp-content/uploads/amazon-advertising-logo.png" 
-        alt="" />
         {basket?.length === 0 ?
         (
         <div>   
@@ -26,6 +24,9 @@ function Checkout() {
         ) : 
         (
             <div>
+                <img className="checkout__ad"
+                src={image77} 
+                alt="" />
                 <h3>Hello, {user?.email}</h3>
                 <h2 className="checkout__title">Your Shopping Basket</h2>
               

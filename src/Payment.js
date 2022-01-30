@@ -13,24 +13,24 @@ function Payment() {
         <div className="payment">
             <div className="payment__container">
 
-                <h1>Checkout (<Link to="/checkout"> {basket?.length} items </Link>)</h1>
+                <h3>Checkout Items = <Link to="/checkout"> {basket?.length} </Link> </h3>
 
                 {/* Payment section - delivery address */}
                 <div className="payment__section">
                     <div className="payment__title">
-                        <h3>Delivery Address</h3>
+                        <h4>Delivery Address</h4>
                     </div>
                     <div className="payment__address">
                         <p>{user?.email}</p>
-                        <p>123 Amazon Lane</p>
-                        <p>Silicon Valley, CA</p>
+                        <p>Branka 130/9</p>
+                        <p>Brno, Czech Republic</p>
                     </div>
                 </div>
 
                  {/* Payment section - Review Items */}
                  <div className="payment__section">
                  <div className="payment__title">
-                        <h3>Review items and delivery</h3>
+                        <h4>Review items and delivery</h4>
                     </div>
                     <div className="payment__items">
                     {basket.map((item) => (
@@ -48,7 +48,7 @@ function Payment() {
                 {/* Payment section -  payment method*/}
                 <div className="payment__section">
                 <div className="payment__title">
-                        <h3>Payment Method</h3>
+                        <h4>Payment Method</h4>
                     </div>
                     <div className="payment__details">
                         {/* Stripe magic will go */}
@@ -56,7 +56,7 @@ function Payment() {
                             <div className="payment__priceContainer">
                                 <CurrencyFormat 
                                     renderText={(value) => (
-                                            <h3>Order Total: {value}</h3>
+                                            <h5 className='payment__total'>Order Total: {value}</h5>
                                             )}                                   
                                     decimalScale={2}
                                     value={getBasketTotal(basket)}

@@ -6,7 +6,9 @@ import Home from './Home';
 import Checkout from './Checkout'
 import Login from "./Login" 
 import { useStateValue} from "./StateProvider";
-import Payment  from "./Payment"
+import Payment  from "./Payment";
+import Footer from './Footer';
+
 
 
 function App() {
@@ -14,12 +16,12 @@ function App() {
 
 
   return (
-    
       <Router>
          <Switch>
            <Route path="/checkout">
               <Header />
               <Checkout />
+              <Footer />
            </Route>
            <Route path="/login">
               <Login />
@@ -27,15 +29,15 @@ function App() {
            <Route path="/payment">
                <Header />   
                <Payment />
+               <Footer />
             </Route>
-            <Route path="/practice">
-            <h1>This path is just for practice</h1>
-           </Route>
            <Route exact path="/">
               <Header />
              <Home />
+             <Footer />
            </Route>
          </Switch>
+         
       </Router>
       
     

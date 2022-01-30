@@ -1,0 +1,41 @@
+.footer {
+    border-top: 1 px solid lightslategray;
+    padding: 20px;
+    background-color: #232f3e;
+    color: white;
+    text-align: center;
+}
+
+.footer > p {
+    padding: 5px;
+    font-size: 13px;
+    
+}
+
+.footer__info {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 70px;
+    font-size: 13px;
+}
+
+.footer__style > h6 {
+    margin-bottom: 15px;
+    text-align: left;
+    font-size: 17px;
+    font-weight: 500;
+
+    
+}
+
+.footer__style > p {
+    text-align: left;
+    
+}
+
+.footer__style > p:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    transform: scale(1.08);
+}
